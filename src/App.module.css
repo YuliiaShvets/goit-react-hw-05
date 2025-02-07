@@ -1,0 +1,9 @@
+.App {
+max-width: 100%;
+padding: 20px;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+
+
