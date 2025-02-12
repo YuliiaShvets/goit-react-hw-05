@@ -21,17 +21,21 @@ const MovieDetailsPage = () => {
         <div>
             <GoBackButton />
             <div className={s.movie}>
+              <div>
                 <img className={s.imgMovie} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
-                <h1>{movie.title}</h1>
-                <p >Score: {Math.round(movie.vote_average * 10)}%</p>
-                <p className={s.descriptionMovie}>Overview: {movie.overview}</p>
-                <ul className={s.genresList}>Genres: 
+              </div>
+                <div>
+                  <h1 className={s.movieDetailsTitle}>{movie.title}</h1>
+                  <p className={s.scoreMovie}>Score: {Math.round(movie.vote_average * 10)}%</p>
+                  <ul className={s.genresList}>Genres: 
                     {
-                        movie.genres.map(genre => (
-                            <li key={genre.id}>{genre.name}</li>
+                    movie.genres.map(genre => (
+                     <li key={genre.id} className={s.genresItem}>{genre.name}</li>
                         ))
                     }
-                </ul>
+                  </ul>
+                  <p className={s.descriptionMovie}>Overview: {movie.overview}</p>
+                </div>
             </div>
 
 

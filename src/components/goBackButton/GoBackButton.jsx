@@ -15,9 +15,11 @@ const GoBackButton = () => {
         };
     
         return (
+            <div className={s.button}>
             <button className={s.backButton} onClick={handleGoBack}>
                 Go Back
             </button>
+            </div>
         );
     }
     

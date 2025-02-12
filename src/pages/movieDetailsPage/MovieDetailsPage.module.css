@@ -1,0 +1,38 @@
+.movie{
+    background-color: rgb(16, 4, 37);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100vw; 
+    min-height: 100vh;
+    display: flex;
+    gap: 40px;
+}
+
+.imgMovie{
+    width: 350px;
+    height: 500px;
+}
+
+.movieDetailsTitle{
+    color: rgb(243, 61, 15)
+}
+
+.scoreMovie{
+    color: white; 
+}
+
+.descriptionMovie{
+    color: white; 
+}
+
+.genresList{
+    color: rgb(241, 227, 19); 
+    padding-left: 0;
+}
+
+.genresItem{
+color: white;
+margin-left: 20px;
+list-style: circle;
+list-style-position: unset;
+}

@@ -1,0 +1,15 @@
+.homePage {
+    background-color: rgb(16, 4, 37);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.homeTitle {
+color: rgb(243, 61, 15);
+display: flex;
+justify-content: center;
+padding-top: 20px;
+margin-bottom: 40px;
+margin-top: 0;
+font-size: 40px;
+}

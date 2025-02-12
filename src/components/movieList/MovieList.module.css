@@ -1,0 +1,21 @@
+.listMovies{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movieItem{
+    width: calc(25% - 7.5px);
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.poster{
+width: 240px;
+}
+
+.link{
+color: rgb(241, 227, 19);
+}

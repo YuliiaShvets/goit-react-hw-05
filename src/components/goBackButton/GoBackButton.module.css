@@ -1,0 +1,12 @@
+.button{
+    background-color: rgb(16, 4, 37);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.backButton{
+    width: 80px;
+    height: 40px;
+}

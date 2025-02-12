@@ -1,0 +1,19 @@
+.moviePage{
+    background-color: rgb(16, 4, 37);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100vw; 
+    min-height: 100vh;
+}
+
+.movieForm{
+display: flex;
+justify-content: center;
+padding-top: 20px;
+margin-bottom: 40px;
+}
+
+.inputMovie{
+width: 300px;
+height: 30px;
+}
