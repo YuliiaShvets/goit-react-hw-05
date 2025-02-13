@@ -1,0 +1,41 @@
+.actors{
+    background-color: rgb(16, 4, 37);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100vw; 
+    min-height: 100vh;
+}
+
+.actorsTitle{
+    margin: 0;
+    color: white;
+    padding-top: 20px;
+}
+
+.actorsList{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.actorsItem{
+    width: calc(20% - 7px);
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.actorImage{
+    width: 200px;
+    height: 300px;
+}
+
+.actorsName{
+    color: rgb(241, 227, 19);
+}
+
+.actorsCaracter{
+    color: white;
+}
+

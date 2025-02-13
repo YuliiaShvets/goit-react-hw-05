@@ -3,6 +3,7 @@ import { fetchTrendingMovies } from "../../services/api.js";
 import MovieList from "../../components/movieList/MovieList.jsx";
 import s from "../homePage/HomePage.module.css";
 
+
 const HomePage = () => {
     const [movies, setMovies] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -16,8 +17,7 @@ const HomePage = () => {
 
     return (
         <div className={s.homePage}>
-            <h1 className={s.homeTitle}>Trending Movies!!!
-        </h1>
+            <h1 className={s.homeTitle}>Trending Movies!!!</h1>
             <MovieList movies={movies} isLoading={isLoading} />
         </div>
     );

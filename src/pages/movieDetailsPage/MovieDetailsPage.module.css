@@ -36,3 +36,21 @@ margin-left: 20px;
 list-style: circle;
 list-style-position: unset;
 }
+
+.movieDetails{
+    background-color: rgb(241, 227, 19); 
+    height: 40px;
+    padding-left: 50px;
+}
+
+.link{
+    color: rgb(16, 4, 37);
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 20px;
+    }
+    
+    .active{
+        color: rgb(243, 61, 15);
+        text-decoration: underline;
+    }

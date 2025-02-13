@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import s from "./MovieList.module.css";
+import { ClipLoader } from "react-spinners";
 
 const  MovieList = ({ movies, isLoading }) => {
 
@@ -11,8 +12,13 @@ const  MovieList = ({ movies, isLoading }) => {
 
     const location = useLocation();
     if (isLoading) {
-        return <p>Loading...</p>;
+        return (
+            <div className={s.spinnerContainer}>
+                <ClipLoader size={50} color={"#123abc"} loading={isLoading} />
+            </div>
+        );
     }
+    
     return (
         <>
             {movies.length > 0 ? (

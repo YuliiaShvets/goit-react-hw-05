@@ -1,0 +1,21 @@
+.movieRewievs{
+    background-color: rgb(16, 4, 37);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100vw; 
+    min-height: 100vh;
+}
+
+.movieRewievsTitle{
+    color: white;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.movieRewievsList{
+color: white;
+}
+
+.pReviews{
+    color: white;
+    }

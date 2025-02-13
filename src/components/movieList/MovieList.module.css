@@ -19,3 +19,10 @@ width: 240px;
 .link{
 color: rgb(241, 227, 19);
 }
+
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

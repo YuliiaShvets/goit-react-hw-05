@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
-import { useParams, Link, Outlet } from "react-router-dom";
+import { useParams, NavLink, Outlet } from "react-router-dom";
 import { fetchMovieDetails } from "../../services/api.js";
 import GoBackButton from "../../components/goBackButton/GoBackButton.jsx";
 import s from "../movieDetailsPage/MovieDetailsPage.module.css";
+import clsx from 'clsx';
+
+const buildLinkClass = ({ isActive }) => {
+    return clsx(s.link, isActive && s.active);
+  };
 
 const MovieDetailsPage = () => {
     const { movieId } = useParams();
@@ -39,10 +44,9 @@ const MovieDetailsPage = () => {
             </div>
 
 
-            <div className={s.movieLink}>
-                <Link className={s.link} to={`cast`}>Actors</Link>
-                <Link className={s.link} to={`reviews`}>Reviews</Link>
-
+            <div className={s.movieDetails}>
+                <NavLink className={buildLinkClass} to={`cast`}>Actors</NavLink>
+                <NavLink className={buildLinkClass} to={`reviews`}>Reviews</NavLink>
             </div>
             <Outlet />
         </div>
