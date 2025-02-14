@@ -1,0 +1,31 @@
+.notfound {
+    background-color: rgb(16, 4, 37);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notFoundTitle {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .notFoundTitle {
+        font-size: 30px; 
+    }
+}
+
+
+@media (max-width: 375px) {
+    .notFoundTitle {
+        font-size: 24px;
+    }
+}

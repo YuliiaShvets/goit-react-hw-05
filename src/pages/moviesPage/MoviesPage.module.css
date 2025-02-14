@@ -1,19 +1,62 @@
-.moviePage{
+.moviePage {
     background-color: rgb(16, 4, 37);
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 100vw; 
+    padding: 20px;
+    width: 100vw;
     min-height: 100vh;
 }
 
-.movieForm{
-display: flex;
-justify-content: center;
-padding-top: 20px;
-margin-bottom: 40px;
+.movieForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.inputMovie{
-width: 300px;
-height: 30px;
+.inputMovie {
+    width: 100%;
+    max-width: 300px;
+    height: 35px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid rgb(241, 227, 19);
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputMovie:focus {
+    border-color: rgb(243, 61, 15);
+}
+
+
+@media (min-width: 1024px) {
+    .moviePage {
+        padding: 30px;
+        flex-direction: row;
+    }
+
+    .inputMovie {
+        max-width: 280px;
+        height: 32px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .moviePage {
+        padding: 15px;
+    }
+
+    .movieForm {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .inputMovie {
+        max-width: 250px;
+        height: 30px;
+        font-size: 14px;
+    }
 }

@@ -1,21 +1,61 @@
-.movieRewievs{
+.movieRewievs {
     background-color: rgb(16, 4, 37);
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 100vw; 
+    padding: 20px;
+    width: 100vw;
     min-height: 100vh;
 }
 
-.movieRewievsTitle{
+.movieRewievsTitle {
     color: white;
     margin-top: 0;
     padding-top: 20px;
+    text-align: center;
+    font-size: 28px;
 }
 
-.movieRewievsList{
-color: white;
-}
-
-.pReviews{
+.movieRewievsList {
     color: white;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pReviews {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    border-left: 4px solid rgb(241, 227, 19);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+@media (min-width: 1024px) {
+    .movieRewievs {
+        padding: 30px;
     }
+
+    .movieRewievsTitle {
+        font-size: 26px;
+    }
+
+    .pReviews {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .movieRewievs {
+        padding: 15px;
+    }
+
+    .movieRewievsTitle {
+        font-size: 24px;
+    }
+
+    .pReviews {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

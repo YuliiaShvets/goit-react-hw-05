@@ -1,41 +1,70 @@
-.actors{
+.actors {
     background-color: rgb(16, 4, 37);
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100vw; 
     min-height: 100vh;
 }
 
-.actorsTitle{
+.actorsTitle {
     margin: 0;
     color: white;
     padding-top: 20px;
+    text-align: center;
 }
 
-.actorsList{
+.actorsList {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
 }
 
-.actorsItem{
-    width: calc(20% - 7px);
+.actorsItem {
+    width: calc(50% - 10px);
     max-width: 100%;
     height: auto;
-    padding-bottom: 40px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.actorImage{
-    width: 200px;
-    height: 300px;
+.actorImage {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
 }
 
-.actorsName{
+.actorsName {
     color: rgb(241, 227, 19);
+    font-size: 1rem;
 }
 
-.actorsCaracter{
+.actorsCaracter {
     color: white;
+    font-size: 0.9rem;
 }
 
+
+@media (min-width: 768px) {
+    .actorsItem {
+        width: calc(33.33% - 10px);
+    }
+    
+    .actorImage {
+        width: 180px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .actorsItem {
+        width: calc(20% - 7px);
+    }
+    
+    .actorImage {
+        width: 200px;
+        height: 300px;
+    }
+}

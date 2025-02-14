@@ -1,23 +1,54 @@
-.listMovies{
+.listMovies {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
 }
 
-.movieItem{
-    width: calc(25% - 7.5px);
+.movieItem {
     max-width: 100%;
     height: auto;
-    padding-bottom: 40px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.poster{
-width: 240px;
+.poster {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.link{
-color: rgb(241, 227, 19);
+.link {
+    color: rgb(241, 227, 19);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .movieItem {
+        width: calc(33.33% - 10px); 
+    }
+    
+    .poster {
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .movieItem {
+        width: calc(25% - 7.5px);
+    }
+    
+    .poster {
+        width: 240px;
+    }
 }
 
 .spinnerContainer {

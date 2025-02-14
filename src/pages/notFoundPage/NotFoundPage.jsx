@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import GoBackButton from "../components/goBackButton/GoBackButtob.jsx";
+import GoBackButton from "../../components/goBackButton/GoBackButton.jsx";
+import s from "../notFoundPage/NotFoundPage.module.css"
 
 const NotFoundPage = () => {
     return (
-        <>
-            <h1>404 - Not Found</h1>
+        <div className={s.notfound}>
+            <h1 className={s.notFoundTitle}>404 - Not Found</h1>
             <Link to="/"><GoBackButton /></Link>
-        </>
+        </div>
     );
 }
 

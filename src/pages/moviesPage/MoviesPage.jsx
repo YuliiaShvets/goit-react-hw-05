@@ -1,7 +1,7 @@
 import MovieList from "../../components/movieList/MovieList";
 import { useState, useEffect } from "react";
 import { searchMovies } from "../../services/api";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import s from "../moviesPage/MoviesPage.module.css"
 
 const MoviesPage = () => {
@@ -9,6 +9,7 @@ const MoviesPage = () => {
     const [query, setQuery] = useState(searchParams.get("q") || "");
     const [movies, setMovies] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         updateSearchParams("q", query);
@@ -19,8 +20,16 @@ const MoviesPage = () => {
 
         searchMovies(query)
             .then((data) => {
-                if (!isCancelled) setMovies(data);
-
+                if (!isCancelled) {
+                    if (data.length === 0) {
+                        navigate ("/not-found"); // Перенаправлення, якщо фільм не знайдено
+                    } else {
+                        setMovies(data);
+                    }
+                }
+            })
+            .catch(() => {
+                navigate("/not-found") // Перенаправлення при помилці
             })
             .finally(() => {
                 if (!isCancelled) setIsLoading(false);
@@ -29,7 +38,7 @@ const MoviesPage = () => {
         return () => {
             isCancelled = true;
         };
-    }, [query]);
+    }, [query, navigate]);
 
     const handleSearch = (e) => {
         e.preventDefault();

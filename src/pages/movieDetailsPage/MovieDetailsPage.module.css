@@ -1,54 +1,113 @@
-.movie{
+.movie {
     background-color: rgb(16, 4, 37);
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 100vw; 
+    padding: 20px;
+    width: 100vw;
     min-height: 100vh;
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.imgMovie{
-    width: 350px;
-    height: 500px;
+
+.imgMovie {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.movieDetailsTitle{
-    color: rgb(243, 61, 15)
+.movieDetailsTitle {
+    color: rgb(243, 61, 15);
+    font-size: 28px;
 }
 
-.scoreMovie{
-    color: white; 
+.scoreMovie {
+    color: white;
+    font-size: 18px;
 }
 
-.descriptionMovie{
-    color: white; 
+.descriptionMovie {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.genresList{
-    color: rgb(241, 227, 19); 
+.genresList {
+    color: rgb(241, 227, 19);
     padding-left: 0;
 }
 
-.genresItem{
-color: white;
-margin-left: 20px;
-list-style: circle;
-list-style-position: unset;
+.genresItem {
+    color: white;
+    margin-left: 20px;
+    list-style: circle;
 }
 
-.movieDetails{
-    background-color: rgb(241, 227, 19); 
-    height: 40px;
-    padding-left: 50px;
+.movieDetails {
+    background-color: rgb(241, 227, 19);
+    height: auto;
+    padding: 10px 20px;
+    text-align: center;
 }
 
-.link{
+.link {
     color: rgb(16, 4, 37);
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 15px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1024px) {
+    .movieDetailsTitle {
+        font-size: 26px;
     }
+
+    .imgMovie {
+    width: 500px;
+    height: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .movie {
+        padding: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100vw; 
+        min-height: 100vh;
+        display: flex;
+        gap: 40px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    align-items: start;
+    }
+
+    .movieDetailsTitle {
+        font-size: 24px;
+    }
+
+    .imgMovie {
+       width: 300px;
+       height: 400px;
+    }
+
+    .scoreMovie,
+    .descriptionMovie {
+        font-size: 14px;
+    }
+
+    .link {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
     
     .active{
         color: rgb(243, 61, 15);
