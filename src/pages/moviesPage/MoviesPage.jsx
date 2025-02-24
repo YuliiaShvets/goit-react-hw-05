@@ -64,7 +64,6 @@ const MoviesPage = () => {
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search movie..."
                 />
-                <button className={s.searchBtn} type="submit">Search</button>
             </form>
             <MovieList movies={movies} isLoading={isLoading} />
         </div>
